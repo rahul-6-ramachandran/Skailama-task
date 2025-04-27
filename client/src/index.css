@@ -1,7 +1,13 @@
-*{
+* {
   box-sizing: border-box;
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/fonts/CircularStd.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 
 #app {
@@ -9,6 +15,224 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
   text-align: center;
+}
+
+#landing-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+}
+
+#landing-image {
+  position : relative;
+  flex: 4; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(231.62deg, #C37EFF -26.53%, #3A0B63 117.16%);
+  padding: 50px;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#left-logo {
+  width: 180px; 
+  height: auto;
+}
+
+
+#header-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 60%;
+  margin-top: 40px;
+  z-index: 1;
+  padding-top: 20px;
+}
+h3{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+font-weight:normal;
+font-size: 4.5vw;
+line-height: 1;
+color: white;
+text-align: left;
+
+
+}
+
+#left-text-container{
+  margin-top: 0px;
+  width: 40%;
+  
+}
+
+#left-text-container p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 400;
+font-size: 25px;
+line-height: 130%;
+letter-spacing: 0%;
+text-align: left;
+color : white;
+margin-top: 20px;
+}
+
+#bottom-image{
+
+ position: absolute;
+ bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+#bottom-image img{
+  
+ height: 100%;
+ object-fit: cover;
+  width: 100%;
+  
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+/* Registration form */
+
+
+#register-container {
+  flex: 2; 
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+#right-logo-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+#right-logo-container img{
+  width: 70px;
+height: 70px;
+
+border-width: 9.27px;
+text-align: center;
+align-items: center;
+
+}
+
+#welcome-text{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 109.00000000000001%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #7E22CE;
+}
+
+#name{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+  line-height: 109.00000000000001%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #7E22CE;
+}
+#text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Registration form  */
+
+#register-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#register-form-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  width: 100%;
+}
+
+#input-container input{
+  width: 100%;
+  height: 45px;
+  border:  1px black;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);  
+  padding-left: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 1vw;
+  border-radius: 7px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+#input-container input:focus{
+  outline: none;
+  border: 1px solid #7E22CE;
+  box-shadow: 0px 0px 5px rgba(126, 34, 206, 0.25);
+}
+
+#checkbox-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#checkbox-container input{
+ width: 20px;
+ height: 20px;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: left;
 }
