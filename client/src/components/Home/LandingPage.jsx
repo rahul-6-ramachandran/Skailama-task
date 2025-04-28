@@ -1,4 +1,5 @@
 import React from 'react';
+import './LandingPage.css';
 
 export default function LandingPage() { 
     return(
@@ -34,14 +35,24 @@ export default function LandingPage() {
                     <input type="email" placeholder='Email Address' />
                     <input type="password" placeholder='Password' />
                    <div id='checkbox-container'>
-                   <input type="checkbox" placeholder='Password' />
+                    <div>
+                    <input type="checkbox" placeholder='Password' />
                     <span id='remember-me'>Remember me</span>
-                    <a href="Forgot Password">Forgot Password</a>
+                    </div>
+
+                    <a href="Forgot Password">Forgot Password?</a>
+              
 
                    </div>
+                   <button >Login</button>
                 </div>
-         
-                <button id='register-button'>Register</button>
+                <div id='or-container'>
+                    <span>or</span>
+                    </div>
+                <div id='signup-container'>
+                    <p>Don’t have an account?</p>
+                    <a href="Sign Up">Create Account</a>
+           </div>
             </form>
         
        </div>
